@@ -114,7 +114,7 @@ button:focus {
     font-weight: 700;
     margin-bottom: 15px;
     line-height: 50px;
-    text-transform: uppercase; }
+    }
     @media (max-width: 991px) {
       .main_title h2 br {
         display: none; } }
@@ -123,7 +123,10 @@ button:focus {
         font-size: 30px;
         line-height: 34px; } }
   .main_title p {
-    margin-bottom: 0px; }
+    margin-bottom: 0px; 
+    font-size: 18px;
+    font-weight: 550;
+    }
     @media (max-width: 991px) {
       .main_title p br {
         display: none; } }
@@ -2444,6 +2447,31 @@ h6 {
         display: none; } }
 
 /* End About Us Area css
+/*----------------------------------------------------*/
+/* Start what i do Area css
+============================================================================================ */
+.what_i_do_area {
+  position: relative; }
+  .what_i_do_area .main_title {
+    margin-bottom: 0px; }
+    .what_i_do_area .main_title p {
+      margin-bottom: 20px; }
+  .what_i_do_area .primary_btn {
+    margin-top: 20px; }
+  .what_i_do_area .about_img {
+    position: relative;
+    right: 250px; }
+    @media (max-width: 1480px) {
+      .what_i_do_area .about_img {
+        right: 0; }
+        .what_i_do_area .about_img img {
+          max-width: 100%;
+          height: auto; } }
+    @media (max-width: 991px) {
+      .what_i_do_area .about_img {
+        display: none; } }
+
+/* End  what i do Area css
 ============================================================================================ */
 /* Start Barand Area css
 ============================================================================================ */
