@@ -48,6 +48,7 @@
 			var $workGrid = $('.portfolio-grid').isotope({
 				itemSelector: '.all',
 				percentPosition: true,
+				filter: ".popular",
 				masonry: {
 					columnWidth: '.all'
 				}
