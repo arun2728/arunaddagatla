@@ -34,9 +34,10 @@
             Isotope js Starts
          --------------------------------------------- */
 	$(window).on('load', function() {
-		$('.portfolio-filter ul li').on('click', function() {
-			$('.portfolio-filter ul li').removeClass('active');
+		$('.portfolio-filter ul li button').on('click', function() {
+			$('.portfolio-filter ul li button').removeClass('active');
 			$(this).addClass('active');
+			
 
 			var data = $(this).attr('data-filter');
 			$workGrid.isotope({
@@ -48,7 +49,7 @@
 			var $workGrid = $('.portfolio-grid').isotope({
 				itemSelector: '.all',
 				percentPosition: true,
-				filter: ".popular",
+				filter: "popular",
 				masonry: {
 					columnWidth: '.all'
 				}
