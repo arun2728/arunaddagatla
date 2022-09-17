@@ -1,0 +1,174 @@
+.timeline {
+    position: relative;
+    max-width: 1200px; /* Restrict the width on large screens */
+    margin: 0 auto; /* Center the content */
+    padding: 30px;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.container1 {
+    position: relative;
+    width: 50%;
+    min-height: 120px;
+}
+.container1-left {
+    left: 0;
+    padding-right: 70px;
+    text-align: right;
+}
+.container1-right {
+    left: 50%;
+    padding-left: 70px;
+    text-align: left;
+}
+.content {
+    padding: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.container1 .content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 35px;
+    width: 0;
+    z-index: 1;
+    border: medium solid white;
+}
+.container1-left .content::before {
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fff;
+}
+.container1-right .content::before {
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.image {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+    border: solid 5px #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+.container1-left .image {
+    right: 0;
+    margin-right: -45px;
+}
+.container1-right .image {
+    left: 0;
+    margin-left: -45px;
+}
+.content span {
+    color: #2C7A7B;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.content h2 {
+    font-size: 1.8em;
+    padding-top: 5px;
+}
+.content p {
+    line-height: 1.6;
+    padding-top: 5px;
+}
+@media screen and (max-width: 767px) {
+    .timeline::after {
+        left: 65px;
+    }
+    .container1 {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+    .container1:first-of-type {
+        margin-top: 0px;
+    }
+    .container1-right {
+        left: 0%;
+    }
+    .container1-left {
+        text-align: left;
+    }
+    .container1 .image {
+        left:-10px;
+        top: 0px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .container1-left .content::before {
+        left: -10px;
+        right: auto;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container1 {
+        padding-left: 0px;
+        padding-top: 105px;
+        z-index: 3;
+    }
+    .container1 .content::before {
+        left: 25px;
+        top: -10px;
+        border: medium solid white;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent white transparent;
+    }
+}
+
+
+.primary_btn1 {
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 0px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 46px;
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: double 2px transparent;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3); }
+    .primary_btn1 span {
+      padding: 0 42px; }
+    .primary_btn1.tr-bg {
+      background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+      border: 2px solid transparent;
+      color: #222222;
+      box-shadow: none; }
+      .primary_btn1.tr-bg:hover {
+        background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+        border: double 2px transparent;
+        color: #ffffff;
+        box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3); }
+    .primary_btn1:hover {
+      background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+      border: 2px solid #854fee;
+      color: #222222;
+      box-shadow: none;
+      background-clip: border-box; }
