@@ -14,12 +14,14 @@
 	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/DegreeCard.css">
 </head>
 	
 
-<body>
+<body style="background-color: #faf6ff;">
 
 	<!--================ Start Header Area =================-->
 	<header class="header_area">
@@ -51,16 +53,16 @@
 	<!--================ End Header Area =================-->
 
      <!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
+	<section class="home_banner_area" style="background-color: #ece9f0;">
+		<div class="banner_inner" style="background-color: #faf6ff;">
+			<div class="container" style="background-color: #faf6ff;">
+				<div class="row" style="background-color: #faf6ff;">
+					<div class="col-lg-5" style="background-color: #faf6ff;">
 						<div class="home_right_img">
 							<img class="" src="img/education/education_home.png" alt="">
 						</div>
 					</div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-7" style="background-color: #faf6ff;">
 						<div class="banner_content">
 							<h3 class="display-3 mb-3">
                                 <div style="text-align:center;">Education</div>
@@ -78,17 +80,17 @@
 	<!--================ End Home Banner Area =================-->
 
 	<!--================Start Portfolio Area =================-->
-	<section class="portfolio_area section_gap_top" id="portfolio">
+	<section class="portfolio_area section_gap_top" id="portfolio" style="background-color: #faf6ff;">
         <div class="container">
             <div class="filters portfolio-filter">
                 <ul class="nav nav-pills">
 					<li class="nav-item" style="width: 45%;">
-						<button class="btn-portfolio nav-link w-100 py-3 fs-5 rounded border border-2 border-main mb-5" data-bs-toggle="pill" data-filter=".popular" style="font-size: 18px;">
+						<button class="btn-portfolio nav-link w-100 py-3 fs-5 rounded border border-2 border-main mb-5" data-bs-toggle="pill" data-filter=".degree" style="font-size: 18px;">
 							Qualifications
 						</button>
 					</li>
 					<li class="nav-item" style="width: 45%;">
-						<button class="btn-portfolio nav-link w-100 py-3 fs-5 rounded border border-2 border-main mb-5" data-bs-toggle="pill" data-filter=".latest"  style="font-size: 18px;">
+						<button class="btn-portfolio nav-link w-100 py-3 fs-5 rounded border border-2 border-main mb-5" data-bs-toggle="pill" data-filter=".certificate"  style="font-size: 18px;">
 							Certifications
 						</button>
 					</li>
@@ -97,24 +99,43 @@
 			
             <div class="filters-content">
 				<div class="row portfolio-grid justify-content-center">
-					<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p1.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p1.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
+					<div class="all degree">
+						<div class="educations-body-div">
+							<div class="degree-card">
+								<div class="card-img">
+									<img src="img\education\university_logo.jpg" alt="University of Mumbai" style="max-width: 60%; max-height: 60%;">
+								</div>
+								<div class="card-body rounded border">
+									<div class="body-header rounded border" style="background-color: #cbb9f2">
+										<div class="body-header-title">
+											<h2 class="card-title">
+												University of Mumbai
+											</h2>
+											<h3 class="card-subtitle">
+												B.E in Computer Engineering
+											</h3>
+										</div>
+										<div class="body-header-duration">
+											<h3 class="duration">2018 - 2022</h3>
+										</div>
 									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">minimal design</a></h4>
-								<p>Animated, portfolio</p>
+									<div class="body-content">
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.</p>
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.</p>
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.</p>
+										<a href="https://mu.ac.in/" target="_blank" rel="noopener noreferrer">
+											<div class="visit-btn" style="background-color: #cbb9f2;">
+												<p class="btn" style="color: rgb(0, 0, 0);">Visit Website</p>
+											</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
+
+						
 					</div>
-					<div class="col-lg-4 col-md-6 all popular">
+					<div class="col-lg-4 col-md-6 all certificate">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid w-100" src="img/portfolio/p2.jpg" alt="">
@@ -131,7 +152,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6 all latest">
+					<!--<div class="col-lg-4 col-md-6 all latest">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid w-100" src="img/portfolio/p3.jpg" alt="">
@@ -147,8 +168,8 @@
 								<p>Animated, portfolio</p>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all popular">
+					</div>-->
+					<div class="col-lg-4 col-md-6 all certificate">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid w-100" src="img/portfolio/p4.jpg" alt="">
@@ -165,7 +186,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6 all popular">
+					<div class="col-lg-4 col-md-6 all certificate">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid w-100" src="img/portfolio/p4.jpg" alt="">
@@ -182,7 +203,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6 all popular">
+					<div class="col-lg-4 col-md-6 all certificate">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid w-100" src="img/portfolio/p4.jpg" alt="">
@@ -199,7 +220,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6 all popular">
+					<div class="col-lg-4 col-md-6 all certificate">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid w-100" src="img/portfolio/p4.jpg" alt="">
@@ -223,7 +244,7 @@
     <!--================End Portfolio Area =================-->
     
     <!--================Footer Area =================-->
-	<footer class="footer_area">
+	<footer class="footer_area" style="background-color: #faf6ff;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-12">
@@ -255,6 +276,7 @@
 	</footer>
 	<!--================End Footer Area =================-->
     
+	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
