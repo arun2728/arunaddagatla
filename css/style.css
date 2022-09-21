@@ -28,7 +28,7 @@ Author E-mail: naimlasker@gmail.com
 body {
   line-height: 26px;
   font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: #777777;
   background: url(../img/body-bg.png) no-repeat center; }
@@ -100,6 +100,12 @@ button:focus {
   @media (max-width: 1199px) {
     .section_gap_top_2 {
       padding-top: 25px; } }
+
+.section_gap_top_3 {
+  padding-top: 40px; }
+  @media (max-width: 1199px) {
+    .section_gap_top_3 {
+      padding-top: 20px; } }
 
 .section_gap_bottom {
   padding-bottom: 200px; }
@@ -3026,6 +3032,7 @@ h6 {
     background-image: none !important;
     background-color: #fcf8ff; }
 
+  
   /* Blog page Area css
   ============================================================================================ */
   .categories_post img {
