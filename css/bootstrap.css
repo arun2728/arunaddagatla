@@ -6561,6 +6561,11 @@ button.bg-dark:hover {
     border-color: #854fee !important
 }
 
+.border-skills {
+    background-color: white;
+    border-color: white !important
+}
+
 .border-left {
     border-left-color: #000 !important
 }

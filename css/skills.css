@@ -63,7 +63,7 @@
   .feature_item .tooltipdata {
     text-align: center;
     visibility: hidden;
-    border-color: #854fee;
+    border-color: #788489;
     text-align: center;
     position: absolute;
     z-index: 1;
@@ -80,7 +80,7 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #854fee transparent;
+    border-color: transparent transparent white transparent;
   }
   
   .feature_item:hover .tooltipdata {
