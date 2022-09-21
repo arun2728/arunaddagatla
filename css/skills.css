@@ -62,7 +62,6 @@
   } 
   .feature_item:hover .dropdown-content-skills {display: block;}
   .feature_item .tooltipdata {
-    min-width: 350px;
     text-align: center;
     visibility: hidden;
     border-color: #788489;
