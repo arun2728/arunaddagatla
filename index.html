@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/home/logo.png" type="image/png">
 	<title>Arun Addagatla</title>
+	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -16,6 +17,16 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/DegreeCard.css">
+	<link rel="stylesheet" href="css/experience.css">
+	<link rel="stylesheet" href="css/skills.css">
+
+	
+	
+	<!-- New CSS -->
+	
+    
+    
 </head>
 
 <body style="background-color: #faf6ff;">
@@ -26,31 +37,35 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/home/logo.png" alt=""></a>
+					<a class="navbar-brand-main" href="main.html" style="color: black;"><span>A</span>run</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-							<li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-							<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					<div class="collapse navbar-collapse" id="ftco-nav">
+						<ul class="navbar-nav nav ml-auto">
+						  <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+						  <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+						  <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+						  <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+						  <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+						  <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li> 
+						  <li class="nav-item"><a href="https://arunaddagatla.medium.com/" class="nav-link" target="_blank"><span>Blogs</span></a></li>
+						  <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 						</ul>
-					</div>
+					  </div>
 				</div>
 			</nav>
 		</div>
 	</header>
 	<!--================ End Header Area =================-->
 
+	<!--=========================================================-->
 	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area" style="background-color: #faf6ff;">
+	<!--=========================================================-->
+	<section class="home_banner_area" style="background-color: #faf6ff;" id="home-section">
 		<div class="banner_inner">
 			<div class="container">
 				<div class="row">
@@ -67,9 +82,7 @@
 										class="txt-rotate"
 										data-period="2000"
 										data-rotate='["ML Engineer", "Python Developer", "Freelancer", "Blogger" ]'></span>
-									
-								</div>
-								
+								</div>			
 							</h2>
 							<div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
 							<div class="d-flex align-items-center">
@@ -87,11 +100,12 @@
 			</div>
 		</div>
 	</section>
-	<!--================ End Home Banner Area =================-->
-
-	<!--================ Start About Us Area =================-->
-	<section class="about_area section_gap" style="background-color: #faf6ff;">
-		<div class="container">
+	
+	<!--========================================================-->
+	<!--================ Start About Us Area ===================-->
+	<!--========================================================-->
+	<section class="about_area" style="background-color: #faf6ff;" id="about-section">
+		<div class="container section_gap">
 			<div class="row justify-content-start align-items-center">
 				<div class="col-lg-5">
 					<div class="about_img">
@@ -119,52 +133,802 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================ End About Us Area =================-->
-
-	<!--================ Start What I do Area =================-->
-	<h1 class="text-primary mb-3" style="background-color: #faf6ff;">
-		<div style="color:#854fee;text-align:center;font-size: 40px;font-weight: 800;">What I do?</div>
-	</h1>
-	<section class="what_i_do_area" style="background-color: #faf6ff;">
 		<div class="container">
-			<div class="row justify-content-start align-items-center" style="background-color: #faf6ff;">
-				<div class="offset-lg-1 col-lg-5" style="background-color: #faf6ff;">
-					<div class="main_title text-left" style="background-color: #faf6ff;">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content  col-lg-7">
+                    <div class="title text-center">
 						<h2 class="text-primary mb-3">
-							<div style="color:#854fee;font-size: 25px;font-weight: 400;text-align:left;" dir="rtl">ML & Data Science</div>
+							<div style="color:#854fee;">Areas of Interest</div>
 						</h2>
-						<h4 class="text-primary mb-3">
-							<div style="color:#36454F;">
-								⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases.
-							</div>
-						</h4>
-						<h4 class="text-primary mb-3">
-							<div style="color:#36454F;">
-								⚡ Experience of working with Computer Vision and NLP projects
-							</div>
-						</h4>
-						<h4 class="text-primary mb-3">
-							<div style="color:#36454F;">
-								⚡ Complex quantitative modelling for dynamic forecasting and time series analysis
-							</div>
-						</h4>
-						<div style="color:#36454F;">
-								<img src="img/home/what_i_do_skills.png" alt="Forest" style="width:50%">
+                        <p style="font-family: 'Rubik', sans-serif;margin-top: 20px;">
+							Take a look at some of the things I love working on.
+						</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-services">
+                        <span class="lnr lnr-cloud-check"></span>
+                        <a>
+                            <h4>Cloud Compute</h4>
+                        </a>
+                        <p style="font-family: 'Rubik', sans-serif;">
+                            I utilize AWS to develop and productionize machine learning systems.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-services">
+                        <span class="lnr lnr-bubble"></span>
+                        <a>
+                            <h4>NLP</h4>
+                        </a>
+                        <p style="font-family: 'Rubik', sans-serif;">
+                            I apply text analytics to some of the hardest questions in business.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-services">
+                        <span class="lnr lnr-graduation-hat"></span>
+                        <a>
+                            <h4>Machine Learning</h4>
+                        </a>
+                        <p style="font-family: 'Rubik', sans-serif;">
+                            I am passionate about learning the theory that is pushing the cutting edge of ML.
+                        </p>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+	</section>
+	
+	<!--========================================================-->
+	<!--================ Start Education Area =====================-->
+	<!--========================================================-->
+	<section class="home_banner_area" style="background-color: #faf6ff;" id="education-section">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/education/education_home.png" alt="">
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-5" style="background-color: #faf6ff;">
-					<div class="about_img">
-						<img class="" src="img/home/what_i_do.png" alt="">
+
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="display-3 mb-3">
+                                <div style="text-align:center;">Education</div>
+                            </h3>
+                            <h4 class="text-primary mb-3">
+								<div style="color:#854fee;text-align:center;">Basic Qualification and Certifications</div>
+							</h4>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--================ End About Us Area =================-->
 
-	<!--================Footer Area =================-->
+	<section class="portfolio_area " id="portfolio" style="background-color: #faf6ff;margin-top: 80px;">
+        <div class="container">
+            <div class="filters portfolio-filter">
+                <ul>
+					<li class="nav-item btn-portfolio py-3 fs-5 rounded border border-2 border-main mb-5 active" style="width:45%;font-size: 18px;" data-bs-toggle="pill" data-filter=".degree">
+						Qualifications
+					</li>
+					<li class="nav-item btn-portfolio py-3 fs-5 rounded border border-2 border-main mb-5" style="width:45%;font-size: 18px;" data-bs-toggle="pill" data-filter=".certificate">
+						Certifications
+					</li>
+				</ul>
+            </div>
+			
+            <div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+					<div class="all degree">
+						<div class="educations-body-div">
+							<div class="degree-card">
+								<div class="card-img">
+									<img src="img\education\university_logo.jpg" alt="University of Mumbai" style="max-width: 60%; max-height: 60%;">
+								</div>
+								<div class="card-body rounded border">
+									<div class="body-header rounded border" style="background-color: #cbb9f2">
+										<div class="body-header-title">
+											<h2 class="card-title">
+												University of Mumbai
+											</h2>
+											<h3 class="card-subtitle">
+												B.E in Computer Engineering
+											</h3>
+										</div>
+										<div class="body-header-duration">
+											<h3 class="duration">2018 - 2022</h3>
+										</div>
+									</div>
+									<div class="body-content">
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.</p>
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.</p>
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.</p>
+										<a href="https://mu.ac.in/" target="_blank" rel="noopener noreferrer">
+											<div class="visit-btn" style="background-color: #cbb9f2;">
+												<p class="btn" style="color: rgb(0, 0, 0);">Visit Website</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="all certificate">
+						<div class="educations-body-div">
+							<div class="degree-card">
+								<div class="card-img">
+									<img src="img\education\udemy.jpg" alt="Udemy" style="max-width: 60%; max-height: 60%;">
+								</div>
+								<div class="card-body rounded border">
+									<div class="body-header rounded border" style="background-color: #cbb9f2">
+										<div class="body-header-title">
+											<h2 class="card-title">
+												Deep Learning A-Z™: Hands-On Artificial Neural Networks
+											</h2>
+										</div>
+										<div class="body-header-duration">
+											<h3 class="duration">Mar - 2021</h3>
+										</div>
+									</div>
+									<div class="body-content">
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Understood the working and implementation Artificial Neural Networks (ANN), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), Self-Organizing Maps,  Boltzmann Machines, and AutoEncoders   </p>
+										<a href="https://www.udemy.com/certificate/UC-ed81752d-7a2a-4846-8ee3-c2b5e84db8c1/" target="_blank" rel="noopener noreferrer">
+											<div class="visit-btn" style="background-color: #cbb9f2;">
+												<p class="btn" style="color: rgb(0, 0, 0);">View Certificate</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="all certificate">
+						<div class="educations-body-div">
+							<div class="degree-card">
+								<div class="card-img">
+									<img src="img\education\deeplearning.jpg" style="max-width: 60%; max-height: 60%;">
+								</div>
+								<div class="card-body rounded border">
+									<div class="body-header rounded border" style="background-color: #cbb9f2">
+										<div class="body-header-title">
+											<h2 class="card-title">
+												Neural Networks and Deep Learning
+											</h2>
+										</div>
+										<div class="body-header-duration">
+											<h3 class="duration">Dec - 2020</h3>
+										</div>
+									</div>
+									<div class="body-content">
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Built and trained deep neural networks, identified key architecture parameters, implemented vectorized neural networks and deep learning to applications.</p>
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Learned about train test sets, analyzed variance for DL applications, used standard techniques and implemented optimization algorithms, and built neural networks in TensorFlow.</p>
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Built a CNN and used it in detection and recognition tasks, used neural style transfer to generate art, and applied algorithms to image and video data.</p>
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Built and trained RNNs, worked with NLP and Word Embeddings, and used HuggingFace tokenizers and transformer models to perform NER and Question Answering.</p>
+										<a href="https://coursera.org/share/e377adb2fd7534cfa6ae43630370e967" target="_blank" rel="noopener noreferrer">
+											<div class="visit-btn" style="background-color: #cbb9f2;">
+												<p class="btn" style="color: rgb(0, 0, 0);">View Certificate</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="all certificate">
+						<div class="educations-body-div">
+							<div class="degree-card">
+								<div class="card-img">
+									<img src="img\education\udemy.jpg" alt="Udemy" style="max-width: 60%; max-height: 60%;">
+								</div>
+								<div class="card-body rounded border">
+									<div class="body-header rounded border" style="background-color: #cbb9f2">
+										<div class="body-header-title">
+											<h2 class="card-title">
+												The Data Science Course 2020: Complete Data Science Bootcamp
+											</h2>
+										</div>
+										<div class="body-header-duration">
+											<h3 class="duration">Nov - 2020</h3>
+										</div>
+									</div>
+									<div class="body-content">
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Understood the working and implementation Artificial Neural Networks (ANN), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), Self-Organizing Maps,  Boltzmann Machines, and AutoEncoders   </p>
+										<a href="https://udemy-certificate.s3.amazonaws.com/image/UC-e74f9313-11ec-4602-b27e-917920654ea4.jpg?v=1606298747000" target="_blank" rel="noopener noreferrer">
+											<div class="visit-btn" style="background-color: #cbb9f2;">
+												<p class="btn" style="color: rgb(0, 0, 0);">View Certificate</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="all certificate">
+						<div class="educations-body-div">
+							<div class="degree-card">
+								<div class="card-img">
+									<img src="img\education\udemy.jpg" alt="Udemy" style="max-width: 60%; max-height: 60%;">
+								</div>
+								<div class="card-body rounded border">
+									<div class="body-header rounded border" style="background-color: #cbb9f2">
+										<div class="body-header-title">
+											<h2 class="card-title">
+												Master Python Programming: The Complete Python Bootcamp 2020
+											</h2>
+										</div>
+										<div class="body-header-duration">
+											<h3 class="duration">Apr - 2020</h3>
+										</div>
+									</div>
+									<div class="body-content">
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Understood the working and implementation Artificial Neural Networks (ANN), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), Self-Organizing Maps,  Boltzmann Machines, and AutoEncoders   </p>
+										<a href="https://udemy-certificate.s3.amazonaws.com/image/UC-0d7f635b-4497-4737-aadc-edf1d152abdc.jpg?v=1586978193000" target="_blank" rel="noopener noreferrer">
+											<div class="visit-btn" style="background-color: #cbb9f2;">
+												<p class="btn" style="color: rgb(0, 0, 0);">View Certificate</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="all certificate">
+						<div class="educations-body-div">
+							<div class="degree-card">
+								<div class="card-img">
+									<img src="img\education\ibm.png" alt="Udemy" style="max-width: 60%; max-height: 60%;">
+								</div>
+								<div class="card-body rounded border">
+									<div class="body-header rounded border" style="background-color: #cbb9f2">
+										<div class="body-header-title">
+											<h2 class="card-title">
+												Tools for Data Science
+											</h2>
+										</div>
+										<div class="body-header-duration">
+											<h3 class="duration">Jan - 2020</h3>
+										</div>
+									</div>
+									<div class="body-content">
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Covered the languages, tools, and data used by data scientists, including IBM tools focused on data science.</p>
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Demonstrated working knowledge of Jupyter notebooks and RStudio and utilized their various features.</p>
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Created and manage source code for data science in GitHub.</p>
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Learned how IBM Watson Studio and other IBM data science tools can be used by data scientists.
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+										<a href="https://www.coursera.org/account/accomplishments/verify/PGBAD347DM26?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate&utm_term=long" target="_blank" rel="noopener noreferrer">
+											<div class="visit-btn" style="background-color: #cbb9f2;">
+												<p class="btn" style="color: rgb(0, 0, 0);">View Certificate</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="all certificate">
+						<div class="educations-body-div">
+							<div class="degree-card">
+								<div class="card-img">
+									<img src="img\education\ibm.png" alt="Udemy" style="max-width: 60%; max-height: 60%;">
+								</div>
+								<div class="card-body rounded border">
+									<div class="body-header rounded border" style="background-color: #cbb9f2">
+										<div class="body-header-title">
+											<h2 class="card-title">
+												What is Data Science?
+											</h2>
+										</div>
+										<div class="body-header-duration">
+											<h3 class="duration">Dec - 2019</h3>
+										</div>
+									</div>
+									<div class="body-content">
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Understood the basics of Data Science and Machine Learning
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+										<a href="https://www.coursera.org/account/accomplishments/certificate/K9GF6BVCF2RR" target="_blank" rel="noopener noreferrer">
+											<div class="visit-btn" style="background-color: #cbb9f2;">
+												<p class="btn" style="color: rgb(0, 0, 0);">View Certificate</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="all certificate">
+						<div class="educations-body-div">
+							<div class="degree-card">
+								<div class="card-img">
+									<img src="img\education\michagen.png" alt="Udemy" style="max-width: 60%; max-height: 60%;">
+								</div>
+								<div class="card-body rounded border">
+									<div class="body-header rounded border" style="background-color: #cbb9f2">
+										<div class="body-header-title">
+											<h2 class="card-title">
+												Python Data Structures
+											</h2>
+										</div>
+										<div class="body-header-duration">
+											<h3 class="duration">Dec - 2019</h3>
+										</div>
+									</div>
+									<div class="body-content">
+										<p class="content-list" style="color: rgb(0, 28, 85);">⚡ Understood the basics of Python and data structures.
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+										<a href="https://coursera.org/share/1f96751248e13812bfe3d91e96a6c5bd" target="_blank" rel="noopener noreferrer">
+											<div class="visit-btn" style="background-color: #cbb9f2;">
+												<p class="btn" style="color: rgb(0, 0, 0);">View Certificate</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+	
+	<!--========================================================-->
+	<!--================ Start Experience Area =================-->
+	<!--========================================================-->
+	<section class="home_banner_area" style="background-color: #faf6ff;" id="experience-section">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/experience/main.png" alt="">
+						</div>
+					</div>
+
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="display-3 mb-3">
+                                <div style="text-align:center;">Experience</div>
+                            </h3>
+                            <h4 class="text-primary mb-3">
+								<div style="color:#854fee;text-align:center;">Work, Internship and Volunteership</div>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="timeline" style="background-color: #faf6ff;">
+        <div class="container1 container1-right">
+			<img class="image" src="img/experience/enterpret.png">
+            <div class="content">
+                <span style="float: right;font-family: 'Rubik', sans-serif;">Sep 2021 - Aug 2022</span>
+                <h2 style="margin-top: 40px;color:#854fee;">Enterpret</h2>
+				<p style="font-family: 'Rubik', sans-serif;">
+					Machine Learning Intern
+				</p>
+				<p class="content-list" style="color: rgb(0, 28, 85);font-family: 'Rubik', sans-serif;">⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.</p>
+				<p class="content-list" style="color: rgb(0, 28, 85);font-family: 'Rubik', sans-serif;">⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.</p>
+				<p class="content-list" style="color: rgb(0, 28, 85);font-family: 'Rubik', sans-serif;">⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.</p>
+				
+				<button class="primary_btn1 fs-5" style="font-size: 15px;width: 20%;padding-top: 0.1rem;padding-bottom: 0.1rem">View</button>
+            </div>
+        </div>
+        <div class="container1 container1-left">
+            <img class="image" src="img/experience/algoritmo-lab.jpg">
+            <div class="content">
+                <span style="float: left;font-family: 'Rubik', sans-serif;">Jul 2020 - Sep 2020</span>
+                <h2 style="margin-top: 40px;color:#854fee;">Algoritmo Lab</h2>
+				<p style="font-family: 'Rubik', sans-serif;">
+					Data Science Intern
+				</p>
+				<p class="content-list" style="color: rgb(0, 28, 85);font-family: 'Rubik', sans-serif;">⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.</p>
+				<p class="content-list" style="color: rgb(0, 28, 85);font-family: 'Rubik', sans-serif;">⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.</p>
+				<button class="primary_btn1 fs-5" style="font-size: 15px;width: 20%;padding-top: 0.1rem;padding-bottom: 0.1rem">View</button>
+            </div>
+        </div>
+    </div>
+	
+	<!--========================================================-->
+	<!--================== Start Projects Area =================-->
+	<!--========================================================-->
+	<section class="home_banner_area" style="background-color: #faf6ff;" id="projects-section">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img\project\projects.png" alt="">
+						</div>
+					</div>
+
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="display-3 mb-3">
+								<div style="text-align:center;">Projects</div>
+							</h3>
+							<h4 class="text-primary mb-3">
+								<div style="color:#854fee;text-align:center;">
+									Personal and Academic Projects
+								</div>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="portfolio_area section_gap_top" id="portfolio" style="background-color: #faf6ff;">
+		<div class="container">
+			<div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+					<div class="col-lg-4 col-md-6 all degree">
+						<div class="portfolio_box rounded border border-2" style="box-shadow: 5px 5px 5px #d9dbdf;">
+							<div class="single_portfolio">
+								<div style="display:flex;align-items:center;">
+									<img src="img/project/download.png" alt="" style="height:10%; width:10%;float:left;margin-left: 0.5rem;margin-top: 1rem;">
+									<h4 class="text-primary mb-3">
+										<div style="color:#854fee;text-align:center;float:center;margin-top: 2rem;margin-right: 1rem">
+											Abstractive Text Summarizer
+										</div>
+									</h4>
+								</div>
+								<h6 class="text-primary mb-3" style="text-align:left;float:center;margin-left: 1rem;margin-right: .5rem">
+									<div style="color:rgb(0, 28, 85);">
+										Generate grammatically correct and insightful summaries for a given article.
+									</div>
+								</h6>
+								<div style="display:flex;">
+									<img src="img/project/abstractive.png" style="width:100%; height:100%"/>
+								</div>
+								<div class="overlay"></div>
+								<a href="https://github.com/arun2728/Abstractive-Text-Summarization" target="_blank">
+									<div class="icon">
+										<span class="lnr lnr-code"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all degree">
+						<div class="portfolio_box rounded border border-2" style="box-shadow: 5px 5px 5px #d9dbdf;">
+							<div class="single_portfolio">
+								<div style="display:flex;align-items:center;">
+									<img src="img/project/download.png" alt="" style="height:10%; width:10%;float:left;margin-left: 0.5rem;margin-top: 1rem;">
+									<h4 class="text-primary mb-3">
+										<div style="color:#854fee;text-align:center;float:center;margin-top: 2rem;margin-right: 1rem">
+											Data Science Portfolio
+										</div>
+									</h4>
+								</div>
+								<h6 class="text-primary mb-3" style="text-align:left;float:center;margin-left: 1rem;margin-right: .5rem">
+									<div style="color:rgb(0, 28, 85);">
+										Data science projects completed by me for academic, and self-learning.
+									</div>
+								</h6>
+								<div style="display:flex;">
+									<img src="img/project/datascience-repo.png" style="width:100%; height:100%"/>
+								</div>
+								<div class="overlay"></div>
+								<a href="https://github.com/arun2728/data-science-portfolio" target="_blank">
+									<div class="icon">
+										<span class="lnr lnr-code"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all degree">
+						<div class="portfolio_box rounded border border-2" style="box-shadow: 5px 5px 5px #d9dbdf;">
+							<div class="single_portfolio">
+								<div style="display:flex;align-items:center;">
+									<img src="img/project/download.png" alt="" style="height:10%; width:10%;float:left;margin-left: 0.5rem;margin-top: 1rem;">
+									<h4 class="text-primary mb-3">
+										<div style="color:#854fee;text-align:center;float:center;margin-top: 2rem;margin-right: 1rem">
+											Analyze Diaster Tweets
+										</div>
+									</h4>
+								</div>
+								<h6 class="text-primary mb-3" style="text-align:left;float:center;margin-left: 1rem;margin-right: .5rem">
+									<div style="color:rgb(0, 28, 85);">
+										Built a model capable to filter disaster tweet using NLP.
+									</div>
+								</h6>
+								<div style="display:flex;">
+									<img src="img/project/tweets.png" style="width:100%; height:100%"/>
+								</div>
+								<div class="overlay"></div>
+								<a href="https://github.com/arun2728/Diaster-Tweet-analysis-using-natural-language-processing" target="_blank">
+									<div class="icon">
+										<span class="lnr lnr-code"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all degree">
+						<div class="portfolio_box rounded border border-2" style="box-shadow: 5px 5px 5px #d9dbdf;">
+							<div class="single_portfolio">
+								<div style="display:flex;align-items:center;">
+									<img src="img/project/download.png" alt="" style="height:10%; width:10%;float:left;margin-left: 0.5rem;margin-top: 1rem;">
+									<h4 class="text-primary mb-3">
+										<div style="color:#854fee;text-align:center;float:center;margin-top: 2rem;margin-right: 1rem">
+											Automatic Door Unlock System
+										</div>
+									</h4>
+								</div>
+								<h6 class="text-primary mb-3" style="text-align:left;float:center;margin-left: 1rem;margin-right: .5rem">
+									<div style="color:rgb(0, 28, 85);">
+										ADUS uses real-time facial recognition to detect a person's face.
+									</div>
+								</h6>
+								<div style="display:flex;">
+									<img src="img/project/ADUS.png" style="width:100%; height:100%"/>
+								</div>
+								<div class="overlay"></div>
+								<a href="https://github.com/arun2728/Automatic-Door-Unlocking-System-Using-Face-Recognition-/blob/main/README.md" target="_blank">
+									<div class="icon">
+										<span class="lnr lnr-code"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all degree">
+						<div class="portfolio_box rounded border border-2" style="box-shadow: 5px 5px 5px #d9dbdf;">
+							<div class="single_portfolio">
+								<div style="display:flex;align-items:center;">
+									<img src="img/project/download.png" alt="" style="height:10%; width:10%;float:left;margin-left: 0.5rem;margin-top: 1rem;">
+									<h4 class="text-primary mb-3">
+										<div style="color:#854fee;text-align:center;float:center;margin-top: 2rem;margin-right: 1rem">
+											Bigfoot
+										</div>
+									</h4>
+								</div>
+								<h6 class="text-primary mb-3" style="text-align:left;float:center;margin-left: 1rem;margin-right: .5rem">
+									<div style="color:rgb(0, 28, 85);">
+										Developed a platform where one can learn and implement data science in a friendly way.
+									</div>
+								</h6>
+								<div style="display:flex;">
+									<img src="img/project/bigfoot.png" style="width:100%; height:100%"/>
+								</div>
+								<div class="overlay"></div>
+								<a href="https://github.com/arun2728/BigFoot" target="_blank">
+									<div class="icon">
+										<span class="lnr lnr-code"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all degree">
+						<div class="portfolio_box rounded border border-2" style="box-shadow: 5px 5px 5px #d9dbdf;">
+							<div class="single_portfolio">
+								<div style="display:flex;align-items:center;">
+									<img src="img/project/download.png" alt="" style="height:10%; width:10%;float:left;margin-left: 0.5rem;margin-top: 1rem;">
+									<h4 class="text-primary mb-3">
+										<div style="color:#854fee;text-align:center;float:center;margin-top: 2rem;margin-right: 1rem">
+											Stock Screener
+										</div>
+									</h4>
+								</div>
+								<h6 class="text-primary mb-3" style="text-align:left;float:center;margin-left: 1rem;margin-right: .5rem">
+									<div style="color:rgb(0, 28, 85);">
+										Screens five years of historical data of any stock and stores it's in respective CSV format.
+									</div>
+								</h6>
+								<div style="display:flex;">
+									<img src="img/project/stock.png" style="width:100%; height:100%"/>
+								</div>
+								<div class="overlay"></div>
+								<a href="https://github.com/arun2728/Stock-Screener" target="_blank">
+									<div class="icon">
+										<span class="lnr lnr-code"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all degree">
+						<div class="portfolio_box rounded border border-2" style="box-shadow: 5px 5px 5px #d9dbdf;">
+							<div class="single_portfolio">
+								<div style="display:flex;align-items:center;">
+									<img src="img/project/download.png" alt="" style="height:10%; width:10%;float:left;margin-left: 0.5rem;margin-top: 1rem;">
+									<h4 class="text-primary mb-3">
+										<div style="color:#854fee;text-align:center;float:center;margin-top: 2rem;margin-right: 1rem">
+											Encrypted Data Transfer
+										</div>
+									</h4>
+								</div>
+								<h6 class="text-primary mb-3" style="text-align:left;float:center;margin-left: 1rem;margin-right: .5rem">
+									<div style="color:rgb(0, 28, 85);">
+										Wireless Encrypted transfer of transfer text, files and images between two devices.
+									</div>
+								</h6>
+								<div style="display:flex;align-items:right;text-align:right">
+									<img src="https://img.icons8.com/color/48/228BE6/python--v1.png" style="text-align: right;float:right;margin-left: auto; display: block;margin-right: 1rem;margin-bottom: 1rem;"/>
+								</div>
+								<div class="overlay"></div>
+								<a href="https://github.com/arun2728/Encrypted-Data-Transfer/" target="_blank">
+									<div class="icon">
+										<span class="lnr lnr-code"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all degree">
+						<div class="portfolio_box rounded border border-2" style="box-shadow: 5px 5px 5px #d9dbdf;">
+							<div class="single_portfolio">
+								<div style="display:flex;align-items:center;">
+									<img src="img/project/download.png" alt="" style="height:10%; width:10%;float:left;margin-left: 0.5rem;margin-top: 1rem;">
+									<h4 class="text-primary mb-3">
+										<div style="color:#854fee;text-align:center;float:center;margin-top: 2rem;margin-right: 1rem">
+											Disk Scheduling Algorithms
+										</div>
+									</h4>
+								</div>
+								<h6 class="text-primary mb-3" style="text-align:left;float:center;margin-left: 1rem;margin-right: .5rem">
+									<div style="color:rgb(0, 28, 85);">
+										Implemented various disk scheduling algorithms in c.
+									</div>
+								</h6>
+								<div style="display:flex;align-items:right;text-align:right">
+									<img src="https://img.icons8.com/color/48/228BE6/c--v1.png" style="text-align: right;float:right;margin-left: auto; display: block;margin-right: 1rem;margin-bottom: 1rem;"/>
+								</div>
+								<div class="overlay"></div>
+								<a href="https://github.com/arun2728/Disk-Scheduling-Algorithms" target="_blank">
+									<div class="icon">
+										<span class="lnr lnr-code"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<a class="primary_btn" href="https://github.com/arun2728" target="_blank" style="text-align: center;"><span>More Projects</span></a>
+	</section>
+
+	<!--========================================================-->
+	<!--================== Start Skills Area =================-->
+	<!--========================================================-->
+	<section class="home_banner_area" style="background-color: #faf6ff;" id="skills-section">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/skills/main.png" alt="">
+						</div>
+					</div>
+
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="display-3 mb-3">
+                                <div style="text-align:center;">Skills</div>
+                            </h3>
+                            <h4 class="text-primary mb-3">
+								<div style="color:#854fee;text-align:center;">Technical skills and Tools</div>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="home-about-area section-gap">
+		<div class="container">
+			<div class="row feature_inner">
+				<div class="col-lg-3 col-md-6 dropdown-skills">
+					<div class="feature_item">
+						<img src="img/services/s1.png" alt="">
+						<h4>Programming Languages</h4>
+						<div class="row skillbar-wraps">
+							<div class="col-lg-4 skill-left tooltipdata">
+								<div class="single-skill">
+									<p style="font-family: 'Rubik', sans-serif;">
+										<span style="float: left">Python</span>
+										<span style="text-align: right">95%</span>
+  										
+									</p>
+									<div class="skill sb_progress" data-width="95" style="position: relative; width: 100%; background-color: rgb(221, 221, 221); height: 30px;">
+										<div class="sb_bar" style="position: absolute; width: 95%; height: 100%; background-color: #6244c5;">
+											<div class="sb_label" style="padding-left: 5px; line-height: 30px; color: rgb(255, 255, 255);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="single-skill">
+									<p style="font-family: 'Rubik', sans-serif;">
+										<span style="float: left">Java</span>
+										<span style="text-align: right">75%</span>
+  										
+									</p>
+									<div class="skill sb_progress" data-width="95" style="position: relative; width: 100%; background-color: rgb(221, 221, 221); height: 30px;">
+										<div class="sb_bar" style="position: absolute; width: 75%; height: 100%; background-color: #6244c5;">
+											<div class="sb_label" style="padding-left: 5px; line-height: 30px; color: rgb(255, 255, 255);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="single-skill">
+									<p style="font-family: 'Rubik', sans-serif;">
+										<span style="float: left">C</span>
+										<span style="text-align: right">80%</span>
+  										
+									</p>
+									<div class="skill sb_progress" data-width="95" style="position: relative; width: 100%; background-color: rgb(221, 221, 221); height: 30px;">
+										<div class="sb_bar" style="position: absolute; width: 80%; height: 100%; background-color: #6244c5;">
+											<div class="sb_label" style="padding-left: 5px; line-height: 30px; color: rgb(255, 255, 255);"></div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s2.png" alt="">
+						<h4>UI/ux design</h4>
+						<div class="rounded border border-2 border-main tooltipdata">
+							<div style="background-color:#29343d;height:100px;">
+								Languages
+							</div>
+							<div style="background-color:white;height:100px;">
+								Header
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s3.png" alt="">
+						<h4>Web design</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s4.png" alt="">
+						<h4>seo optimize</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    </section> 
+	
+	
+	<!--========================================================-->
+	<!--================== Start Footer Area ===================-->
+	<!--========================================================-->
 	<footer class="footer_area" style="background-color: #faf6ff;">
 		<div class="container">
 			<div class="row justify-content-center">
