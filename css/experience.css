@@ -81,6 +81,17 @@
     font-size: 1.1em;
     font-weight: bold;
 }
+
+.content .primary_btn .new-span {
+    color: white;
+}
+.content .primary_btn .new-span:hover {
+    color: #854fee;
+}
+.content .primary_btn:hover {
+    color: #854fee;
+} 
+
 .content h2 {
     font-size: 1.8em;
     padding-top: 5px;
@@ -171,7 +182,6 @@
       color: #222222;
       box-shadow: none;
       background-clip: border-box; }
-
 
 .rotated {
     transform: rotate(90deg);
