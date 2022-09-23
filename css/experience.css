@@ -190,8 +190,8 @@
     -webkit-transform: rotate(90deg);
     -o-transform: rotate(90deg);
 }
-.img_new{transition: all 0.5s ease;}
-.img_new1{transition: all 0.5s ease;}
+.img_new{transition: all 0.5s ease;cursor: pointer;}
+.img_new1{transition: all 0.5s ease;cursor: pointer;}
 
   .dropdown {
     position: relative;
