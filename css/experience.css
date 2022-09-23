@@ -183,35 +183,27 @@
 .img_new{transition: all 0.5s ease;}
 .img_new1{transition: all 0.5s ease;}
 
-.dropbtn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-
   .dropdown {
     position: relative;
     display: inline-block;
   }
   
-  .dropdown-content-exp {
+  .dropdown-content-exp-1 {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
+    position: static;
+    background-color: white;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
   
-  .dropdown-content-exp a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  .dropdown-content-exp-2 {
+    display: none;
+    position: static;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
-  
-  .dropdown-content-exp a:hover {background-color: #f1f1f1}
-  
+
   .show {display:block;}
