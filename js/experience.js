@@ -37,3 +37,7 @@ function myFunction1() {
 function myFunction2() {
   document.getElementById("myexp2").classList.toggle("show");
 }
+
+function myFunction3() {
+  document.getElementById("myexp3").classList.toggle("show");
+}
